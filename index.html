@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>模板编辑</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="script/dialog-min.css">
+<script type="text/javascript" src="script/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="script/bootstrap.min.js"></script>
+<script type="text/javascript" src="script/jquery-ui-1.11.4.custom.min.js"></script>
+<script type="text/javascript" src="script/dialog-min.js"></script>
+<script type="text/javascript" src="script/control.js"></script>
+</head>
+<body>
+<div class="creat_head">
+   <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-4 column">
+            <img src="/images/logo.png" style="margin-top:6px" >
+        </div>
+        <div class="col-md-8 column" style="padding-top:15px;">
+               <a class="btn btn-primary" id="save">保存</a>
+              <a class="btn btn-primary" id="getstart">发布</a>
+               <a class="btn btn-primary" id="see">预览</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="content">
+  <div class="create_left">
+    <div class="top">页面模版</div>
+    <div role="tabpanel">
+      <ul class="nav nav-tabs" role="tablist" id="myTab" style="padding:0 6px; background:#e1e1e1;">
+        <li role="presentation" class="active"><a class="ng-binding" href="#format" aria-controls="format" role="tab" data-toggle="tab">版式</a></li>
+        <li role="presentation"><a class="ng-binding" href="#style" aria-controls="style" role="tab" data-toggle="tab">风格</a></li>
+        <li role="presentation"><a class="ng-binding" href="#interact" aria-controls="interact" role="tab" data-toggle="tab">互动</a></li>
+        <li role="presentation"><a class="ng-binding" href="#my" aria-controls="my" role="tab" data-toggle="tab">我的</a></li>
+      </ul>
+      <div style="background:#fff; padding-bottom:32px;">
+        <div class="tab-content " style="overflow-y:auto; height:450px;">
+          <div role="tabpanel" class="tab-pane active" id="format">
+            <ul class="tupian">
+              
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="style">2</div>
+          <div role="tabpanel" class="tab-pane" id="interact">3</div>
+          <div role="tabpanel" class="tab-pane" id="my">4</div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="phoneBox">
+    <div class="beijing"><span id="beijing_bj">背景</span>  <span id="beijing_del">X</span></div>
+    <div class="top"></div>
+    <div class="phone_menubar"></div>
+    <div class="scene_title_baner">132</div>
+    <div class="nr">
+      <ul id="layer">
+        
+      </ul>
+    </div>
+    <div class="bottom"></div>
+  </div>
+  <div id="containment" class="create_right">
+    <div class="guanli">页面管理</div>
+    <div class="nav_top">
+      <div class="nav_top_list">
+        <a href="#" id="duplicatePage">复制</a>
+        <a href="#" id="deletePage">删除</a>
+        <a href="#" id="creatMyTemplate">生成模版</a>
+      </div>
+    </div>
+    <div class="nav_content">
+      <ul id="pageList">
+        <li class="ui-state-default bg_active" title="0"><span class="badge showba">1</span><span  class="showbn">第1页</span></li>
+      </ul>
+    </div>
+    <div class="nav_bottom"><a href="#" id="btn_insertPage" class="" title="增加一页">+</a></div>
+  </div>
+   
+    <div class="modal fade bs-example-modal-lg" id="UpImg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <iframe src="/image-upload/index.html" frameBorder="0" scrolling="no" width="100%" height="500"></iframe>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

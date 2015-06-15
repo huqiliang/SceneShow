@@ -1,0 +1,126 @@
+[
+    {
+        "background": "/images/bg1.jpg",
+        "showimg":"/images/yq0KA1Sr42qAA3kDAACBbo8dzx0820.png",
+        "title": "测试1",
+        "pageid":"1",
+        "children": [
+            {
+                "type": "text",
+                "content": "1",
+                "animate_type": "top",
+                "animate_px": "50px",
+                "position":"50px"
+            },
+            {
+                "type": "img",
+                "content": "/images/1.jpg",
+                "width":"50px",
+                "height":"50px",
+                "animate_type": "top",
+                "animate_px": "150px",
+                "position":"50px"
+            },
+            {
+                "type": "text",
+                "content": "3",
+                "animate_type": "top",
+                "animate_px": "250px",
+                "position":"50px"
+            }
+        ]
+    },
+    {
+        "background": "/images/bg2.jpg",
+        "title": "测试2",
+        "pageid":"2",
+        "showimg":"/images/yq0KA1UCilCALNhAAADkHdcwucY018.png",
+        "children": [
+            {
+                "type": "text",
+                "content": "111",
+                "animate_type": "top",
+                "animate_px": "110px",
+                 "position":"130px"
+            },
+            {
+                "type": "img",
+                "content": "/images/1.jpg",
+                "animate_type": "left",
+                "width":"50px",
+                "height":"50px",
+                "animate_px": "30px",
+                "position":"130px"
+            },
+            {
+                "type": "text",
+                "content": "699",
+                "animate_type": "left",
+                "animate_px": "130px",
+                "position":"130px"
+            }
+        ]
+    },
+    {
+        "background": "/images/bg2.jpg",
+        "title": "测试2",
+        "pageid":"2",
+        "showimg":"/images/yq0KA1UCilCALNhAAADkHdcwucY018.png",
+        "children": [
+            {
+                "type": "text",
+                "content": "111",
+                "animate_type": "top",
+                "animate_px": "110px",
+                 "position":"130px"
+            },
+            {
+                "type": "img",
+                "content": "/images/1.jpg",
+                "animate_type": "left",
+                "width":"50px",
+                "height":"50px",
+                "animate_px": "30px",
+                "position":"130px"
+            },
+            {
+                "type": "text",
+                "content": "699",
+                "animate_type": "left",
+                "animate_px": "130px",
+                "position":"130px"
+            }
+        ]
+    },
+    {
+        "background": "/images/bg2.jpg",
+        "title": "测试2",
+        "pageid":"2",
+        "showimg":"/images/yq0KA1UCilCALNhAAADkHdcwucY018.png",
+        "children": [
+            {
+                "type": "text",
+                "content": "111",
+                "animate_type": "top",
+                "animate_px": "110px",
+                 "position":"130px"
+            },
+            {
+                "type": "img",
+                "content": "/images/1.jpg",
+                "animate_type": "left",
+                "width":"50px",
+                "height":"50px",
+                "animate_px": "30px",
+                "position":"130px"
+            },
+            {
+                "type": "text",
+                "content": "699",
+                "animate_type": "left",
+                "animate_px": "130px",
+                "position":"130px"
+            }
+        ]
+    }
+]

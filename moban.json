@@ -1,0 +1,62 @@
+[
+    {
+        "bgColor":"rgb(246, 247, 251)",
+        "float":"center",
+        "showimg":"/images/yq0KA1UCilCALNhAAADkHdcwucY018.png",
+        "title": "Apple",
+        "pageid":"1",
+        "children": [
+            {
+                "type": "img",
+                "content": "/images/yq0KA1Ru0-WASRNsAABwW066NG0877.png",
+                "width":"163px",
+                "height":"158px",
+                "animate_type": "top",
+                "animate_px": "10px",
+                "position":"0px"
+            },
+            {
+                "type": "text",
+                "content": "<p style='font-size: 24px;font-weight: bold;color:#333;'>iWATCH</p><p style='width:90%;margin:0 auto;color:#333'>人生就像一场旅行,不必在乎目的地在乎的,是沿途的风景,以及看风景的心情</p>",
+                "animate_type": "top",
+                "animate_px": "200px",
+                "position":"0px"
+            },
+            {
+                "type": "img",
+                "content": "/images/yq0KA1UAAXWAIhhuAAE-pw3iM_Q729.png",
+                "width":"233px",
+                "height":"142px",
+                "animate_type": "top",
+                "animate_px": "330px",
+                "position":"0px"
+            }
+            
+        ]
+    },
+    {
+        "background": "/images/bg1.jpg",
+        "title": "cycc",
+        "pageid":"2",
+        "float":"left",
+        "showimg":"/images/yq0KA1Sr42qAA3kDAACBbo8dzx0820.png",
+        "children": [
+            {
+                "type": "img",
+                "content": "/images/yq0KA1Ru0uiAAQ8iAABut3_qYpY389.png",
+                "animate_type": "left",
+                "width":"222px",
+                "height":"129px",
+                "animate_px": "0px",
+                "position":"30px"
+            },
+            {
+                "type": "text",
+                "content": "Sponsors of tomorrowLook Inside人生就像一场旅行,不必在乎目的地,在乎的,是沿途的风景,以及看风景的心情。",
+                "animate_type": "left",
+                "animate_px": "0px",
+                 "position":"150px"
+            }
+        ]
+    }
+]

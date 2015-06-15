@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>场景展示</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/zepto.fullpage.css" />
+	
+	<script src="script/zepto.min.js"></script>
+    <script src="script/zepto.fullpage.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var dir="v";            //横向为h
+			var loop=false;         //是否连续翻页
+			var drag=true;          //是否可拖拽
+			var start=0;			//从第几页开始
+			$.getJSON('/yqx.json', {param1: 'value1'}, function(json) {
+				var html='';
+				for (var i = 0; i < json.length; i++) {
+					var children=json[i].children;
+					var len=children.length;
+					var content = '';
+					for (var j = 0; j < len ; j++) {
+						var jcontent=children[j].content
+						if((/.*jpg|.*png|.*gif/).test(jcontent)){
+							content+='<h1 class="gogo"><img src='+jcontent+' width="'+children[j].width+'" height="'+children[j].height+'"/></h1>';
+						}else{
+							content+='<h1 class="gogo">'+jcontent+'</h1>';
+						}
+					};
+					html+='<div class="page" id="page'+i+'" style="background:url('+json[i].background+') no-repeat 50% 50% ;background-size:cover;"><h1>'+content+'</h1></div>'
+							// +'<div class="section" id="section1">'
+							// 	    +'<div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>'
+							// 	    +'<div class="slide" id="slide2"><h1>Totally customizable</h1></div>'
+							// +'</div>'
+							
+						
+				};
+				$('#fullpage').append(html).fullpage({
+					dir:dir,
+				 	loop:loop,
+				 	drag: drag,
+		            start: start,
+				 	afterChange:function(data){
+				 		var PageChildren=json[data.next]['children'];
+				 		
+						for (var i = 0; i < PageChildren.length; i++) {
+
+							var animate_type = PageChildren[i].animate_type,animate ={};
+							
+							animate[animate_type] = PageChildren[i].animate_px;
+
+							var position = (PageChildren[i].animate_type=="left") ? "top" :"left"
+
+							$("#page"+data.next+" .gogo").eq(i).css(position,PageChildren[i].position).animate(animate)
+							
+						};
+				 		
+
+				 	}
+				});
+				
+			});	
+			
+			
+		});
+	</script>
+	<style>
+	body{margin: 0;padding: 0;}
+	h1{
+		position: relative;
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	/* 箭头 */
+	@-webkit-keyframes start {
+	    0%,30% {
+	        opacity: 0.2;
+	        -webkit-transform: translate(0,2px);
+	    }
+	    60% {
+	        opacity: 1;
+	        -webkit-transform: translate(0,0);
+	    }
+	    100% {
+	        opacity: 0.2;
+	        -webkit-transform: translate(0, -2px);
+	    }
+	}
+	@keyframes start {
+	    0%,30% {
+	        opacity: 0.2;
+	        transform: translate(0,2px);
+	    }
+	    60% {
+	        opacity: 1;
+	        transform: translate(0,0);
+	    }
+	    100% {
+	        opacity: 0.2;
+	        transform: translate(0, -2px);
+	    }
+	}
+	.start{
+	    position: fixed;
+	    left: 50%;
+	    margin-left: -17px;
+	    top: 95%;
+	    margin-top: -34px;
+	    width: 34px;
+	    height: 34px;
+	    z-index: 999;
+	}
+	.start b{
+	    position: absolute;
+	    left: 50%;
+	    top: 10px;
+	    margin-left: -9px;
+	    width: 19px;
+	    height: 12px;
+	    background: url(/images/arrow.png);
+	    background-size: 100% 100%;
+	    -webkit-animation: start 1.5s infinite ease-in-out;
+	    animation: start 1.5s infinite ease-in-out;
+	}
+
+
+	</style>
+
+</head>
+<body>
+	<!-- 音乐
+	<audio autoplay="autoplay" controls="controls">
+		 <source src="images/pinguo.mp3" type="audio/mpeg">
+	</audio> -->
+	
+	<span class="start"><b></b></span>
+	<div id="fullpage">
+		
+	</div>
+</body>
+</html>
