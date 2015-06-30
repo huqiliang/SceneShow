@@ -1,0 +1,102 @@
+.CreateSc {
+    color: #08a1ef;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mask {
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 20px;
+}
+
+.mask ul {
+    position: relative;
+    width: 1200px;
+}
+
+.mask ul li {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    width: 235px;
+    height: 340px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    display: inline;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-plus {
+    color: #fff;
+    font-size: 90px;
+    line-height: 240px;
+}
+
+.fa-plus:before {
+    content: "+";
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.mask ul li p {
+    margin-bottom: 0;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 14px;
+    background: #FFF;
+    border-bottom: 1px solid #E7E7E7;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mask-floor {
+    width: 235px;
+    height: 240px;
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    -ms-filter: "alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    -khtml-opacity: .5;
+    opacity: .5;
+}
+
+.my_xinxi {
+    width: 235px;
+    height: 100px;
+}
+
+.preview_scene {
+    position: relative;
+    top: -270px;
+    width: 120px;
+    margin: auto;
+    z-index: 999;
+    background: #08a1ef;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.preview_scene:hover {
+    color: #fff;
+}
+
+.edit_scene {
+    margin-top: 60px;
+}

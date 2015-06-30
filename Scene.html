@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>场景创建</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="script/dialog-min.css">
+		<link rel="stylesheet" type="text/css" href="css/scene.css">
+		<script type="text/javascript" src="script/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="script/bootstrap.min.js"></script>
+		<script type="text/javascript" src="script/dialog-min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column CreateSc">
+					<h1>空白自主创建，或者选择一个样例</h1>
+					<div class="mask">
+						<ul>
+							<li  title="创建一个空白场景">
+								<div style="height:240px; background-color:#bdd5ef;"><i class="fa fa-plus"></i></div>
+								<p style="height:100px;">自主创建<i class="add_icon"></i></p>
+							</li>
+							<li  class="ng-scope">
+								<div class="roll ng-isolate-scope" >
+									<div class="mask-floor ng-hide" >
+									</div>
+									<img style="width:235px;height:240px;" src="/images/yq0KEVV_uDqAM5BZAASWc44FTkg045.jpg">
+									<div class="my_xinxi"><p class="ng-binding">苏州声音<i class="add_icon"></i></p>
+										<p style="background-color:#FFF;color:#999;padding-right:10px;" class="ng-binding">作者：240592357</p>
+									</div>
+									<a  class="preview_scene btn ng-hide" target="_blank">预览</a>
+									<a  class="preview_scene edit_scene btn ng-hide" >就这个了</a>
+								</div>
+							</li>
+							<li  class="ng-scope">
+								<div class="roll ng-isolate-scope" >
+									<div class="mask-floor ng-hide" >
+									</div>
+									<img style="width:235px;height:240px;" src="/images/yq0KEVV_uDqAM5BZAASWc44FTkg045.jpg">
+									<div class="my_xinxi"><p class="ng-binding">苏州声音<i class="add_icon"></i></p>
+										<p style="background-color:#FFF;color:#999;padding-right:10px;" class="ng-binding">作者：240592357</p>
+									</div>
+									<a  class="preview_scene btn ng-hide" target="_blank">预览</a>
+									<a  class="preview_scene edit_scene btn ng-hide" >就这个了</a>
+								</div>
+							</li>
+							<li  class="ng-scope">
+								<div class="roll ng-isolate-scope" >
+									<div class="mask-floor ng-hide" >
+									</div>
+									<img style="width:235px;height:240px;" src="/images/yq0KEVV_uDqAM5BZAASWc44FTkg045.jpg">
+									<div class="my_xinxi"><p class="ng-binding">苏州声音<i class="add_icon"></i></p>
+										<p style="background-color:#FFF;color:#999;padding-right:10px;" class="ng-binding">作者：240592357</p>
+									</div>
+									<a  class="preview_scene btn ng-hide" target="_blank">预览</a>
+									<a  class="preview_scene edit_scene btn ng-hide" >就这个了</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$(function  () {
+			$('.ng-hide').hide()
+			$(".ng-scope").hover(function(event) {
+				$(this).find('.ng-hide').show()
+			},function(){
+				$(this).find('.ng-hide').hide()
+			})
+		})
+	</script>
+</html>
