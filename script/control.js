@@ -204,7 +204,7 @@ $(function(){
 		var NormalHTML='';
 		for (var i = 0; i < Children.length; i++) {
 			if(Children[i].type=="text"){
-				truecontent='<span  contenteditable="true" >'+Children[i].content+'</span>';
+				truecontent='<span  contenteditable="true" class="editor">'+Children[i].content+'</span>';
 			}else if(Children[i].type=="img"){
 				truecontent="<img class='upload' src="+Children[i].content+" width="+Children[i].width+" height="+Children[i].height+"/>";
 			}
@@ -224,7 +224,7 @@ $(function(){
 		})
 		$(".scene_title_baner").text(json[index].title)
 		$("#layer").html('').append(NormalHTML);
-	
+		$(".editor").popline();
 		$('#layer li').click(function(){
 			//$(this).attr('title',"1").siblings().attr('title',"0")
 			var html= '<div class="revolve bar-rotate"></div><div class="bar-line"></div>'
