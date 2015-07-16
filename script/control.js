@@ -194,7 +194,7 @@ $(function(){
 		
 			var PageIndex=parseInt($("#pageList .bg_active .badge").text())-1;
 			
-			EditLocalStorage(PageIndex,index,"content",$(this).text())  //1.所属页面  2.元素下标 3.元素属性 4.修改值 
+			EditLocalStorage(PageIndex,index,"content",$(this).html())  //1.所属页面  2.元素下标 3.元素属性 4.修改值 
 
 		});
 	}
