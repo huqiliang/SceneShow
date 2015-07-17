@@ -287,6 +287,12 @@ $(function(){
      $("#beijing_del").on("click",function(){
    		 EditBg('')
     })
+    
+    //图片上传后的处理
+    $("#img_select").click(function(){
+	 EditBg($("#img1").attr("src"))
+    })
+    
     function EditBg(value){
     	var index=parseInt($(".bg_active").attr("title"))
     	var jsonPage=ReadLocalStoragePage(index)
@@ -295,7 +301,11 @@ $(function(){
     		json[index].background = value
     		SaveToLocalStorage(json)
     	}
-    	$(".nr").css("background","")
+       if(value!=''){
+    		$(".nr").css("background","url("+value+") 50% 50% / cover")
+    	}else{
+    		$(".nr").css("background",'')
+    	}
     }
    
 })
